@@ -92,6 +92,23 @@
                             저장했습니다.</h3>
                         <br>
                         <br>
+                        <img src="assets/img/portfolio/pf2_회원가입_alert.gif" alt="">
+                        <br>
+                        <br>
+                        <h3 style="font-size: 15px;">로그인 버튼을 눌렀을 때 DB에 유저 정보가 없는 경우 회원가입 후 이용해달라는 알림 창을 띄운 후 회원가입 페이지로
+                            돌아가도록 구현했습니다.</h3>
+                        <br>
+                        <img src="assets/img/portfolio/pf2_기존아이디_alert.gif" alt="">
+                        <br>
+                        <br>
+                        <h3 style="font-size: 15px;">회원가입 버튼을 눌렀을 때 DB에 이미 유저 정보가 있다면 이미 가입된 회원이라는 알림 창을 띄운 후 로그인 되도록
+                            구현했습니다.</h3>
+                        <br>
+                        <br>
+                        <img src="assets/img/portfolio/pf2_confirm_alert.gif" alt="">
+                        <h3 style="font-size: 15px;">회원 탈퇴 버튼을 눌렀을 때 알림 창을 띄워 확인을 받은 후 회원 탈퇴가 진행되도록 구현했습니다.</h3>
+                        <br>
+                        <br>
                         <h3 style="font-size: 15px; font-weight: bold">회원가입 후 추가 정보 입력</h3>
                         <img src="assets/img/portfolio/pf2name.png" alt="">
                         <br>
@@ -120,7 +137,7 @@
                             호출하여 자동으로 하이픈(-)을 추가하도록 했습니다.</h3>
                         <br>
                         <h3 style="font-size: 15px;">[ 카카오 API 로그아웃 메서드 ]</h3>
-                        <img src="assets/img/portfolio/pf2_logout.gif" alt="" style="width: 70%">
+                        <img src="assets/img/portfolio/pf2_logout.gif" alt="" style="width: 100%">
                         <br>
                         <br>
                         <img src="assets/img/portfolio/pf2_kakao_logout.png" alt="" style="width: 70%">
@@ -150,6 +167,11 @@
                         <br>
                         <h3 style="font-size: 15px;">입력된 값을 POST로 받아오고 글 작성자만 수정, 삭제가 가능하도록 session을 이용해 글쓴이의 ID 정보를
                             받아와서 ID 값과 입력값을 DB에 저장하도록 구현했습니다.</h3>
+                        <br>
+                        <img src="assets/img/portfolio/pf2_board_unsign.gif" alt="">
+                        <br>
+                        <br>
+                        <h3 style="font-size: 15px;">로그인한 사용자만 게시글 작성이 가능하도록 제약을 걸었습니다.</h3>
 
                         <br>
                         <h3 style="font-size: 15px; font-weight: bold"> - 게시글 수정, 삭제</h3>
@@ -173,6 +195,26 @@
                         <br>
                         <h3 style="font-size: 15px;">댓글 작성자만 삭제 할 수 있도록 로그인한 사용자의 ID와 댓글 작성자의 ID가 일치할 때만 삭제
                             버튼이 활성화 되도록 구현했습니다.</h3>
+                        <br>
+                        <br>
+                        <img src="assets/img/portfolio/pf2_qna_비회원.png" alt="">
+                        <br>
+                        <br>
+                        <h3 style="font-size: 15px;">비회원의 경우 게시글과 댓글 조회는 가능하지만 댓글 작성이 불가하도록 댓글 작성란에 제약을 걸었습니다.</h3>
+                        <br>
+                        <br>
+                        <h3 style="font-size: 17px; font-weight: bold">ERROR</h3>
+                        <hr>
+                        <h3 style="font-size: 15px;">타임리프: EL1007E: Property or field '' cannot be found on null</h3>
+                        <img src="assets/img/portfolio/pf2_error1.png" alt="">
+                        <br>
+                        <br>
+                        <h3 style="font-size: 15px;">로그인한 사용자의 nickname과 게시글을 작성한 사용자의 nickname이 일치할 때만 게시글 수정, 삭제 버튼이
+                            보이도록 구현을 했는데 비회원일 때 왼쪽 화면처럼 게시글 내용 자체가 조회가 되지 않는 오류가 생겼습니다.
+                            이 오류는 로그인하지 않았을 때 session에 nickname이 null인 케이스에 발생한 문제이므로 오른쪽 코드와 같이 null이 아닐 경우에만 nickname을
+                            참조하도록 수정했습니다.</h3>
+
+
                     </div>
                 </div>
 
